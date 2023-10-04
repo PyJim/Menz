@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;;
+    font-weight: 400;
+}
+
+.image-banner{
+    width: 100vw;
+    height: 20vh;
+}
+
+.image-banner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* NAVBAR STYLES */
+
+.navbar{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar ul li{
+    margin: 0 20px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* ABOUT PAGE STYLES */
+.about{
+    width: 100vw;
+    height: 50vh;
+    padding: 0 150px;
+    background-color: rgba(241, 224, 218, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    height: 100%;
+    padding: 50px;
+}
+.image img{
+    height: 100%;
+}
+
+.about-text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-text h3{
+    font-weight: bold;
+    font-size: 36px;
+    color: #620C26;
+    font-family: 'Alatsi', sans-serif;
+}
+.about-text p{
+    color: rgba(0,0,0,0.5);
+}
+.about-desc{
+    margin: 20px 0;
+}
+.about-text a{
+    color: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid rgba(0,0,0,0.5);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SERVICES STYLES */
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.services h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: #620C26;
+    font-family: 'Alatsi', sans-serif;
+}
+.services p{
+    color: rgba(0,0,0,0.5);
+}
+.services .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+.services .grid .item{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services .grid .item img{
+    width: 100%;
+}
+.services .grid .item h4{
+    font-weight: bold;
+    color: #620C26;
+}
+
+/* PORTFOLIO */
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: #F1E0DA;
+}
+.portfolio h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: #620C26;
+    font-family: 'Alatsi', sans-serif;
+}
+.portfolio p{
+    color: rgba(0,0,0,0.5);
+}
+.my-portfolios{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    margin-top: 30px;
+}
+.my-portfolios .item{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.my-portfolios .item img{
+    width: 100%;
+    height: 100%;
+}
+
+/* BASE STYLES */
+.base{
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F1E0DA;
+    padding: 10px 30px;
+}
+
+/* CONTACTS STYLES */
+.contacts{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #310613;
+}
+.contacts h3{
+    font-weight: bold;
+    font-size: 32px;
+    color: #F1E0DA;
+    font-family: 'Alatsi', sans-serif;
+}
+.contacts .contact-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #F1E0DA;
+    font-size: 20px;
+}
+.contact-bar{
+    padding: 0 50px;
+}
+.socials{
+    color: #F1E0DA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #F1E0DA;
+    margin: 10px;
+}
+
+.socials a i{
+    font-size: 22px;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid #F1E0DA;
+}
