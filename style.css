@@ -55,6 +55,7 @@
 .image{
     height: 100%;
     padding: 50px;
+    padding-left: 0;
 }
 .image img{
     height: 100%;
@@ -88,6 +89,26 @@
     font-weight: bold;
 }
 
+
+@media(max-width: 1290px){
+    .about{
+        padding: 0 75px;
+    }
+}
+@media(max-width: 1024px){
+    .about{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .image{
+        padding: 50px 0;
+    }
+}
+.about-text h3{
+    font-size: 30px;
+}
 /* SERVICES STYLES */
 .services{
     display: flex;
@@ -125,6 +146,25 @@
     font-weight: bold;
     color: #620C26;
 }
+@media(max-width: 765px){
+    .services{
+        height: auto;
+        padding: 50px ;
+    }
+    .services .grid{
+        grid-template-columns: 1fr;
+    }
+    .services .grid .item{
+        width: 75vw;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
 
 /* PORTFOLIO */
 .portfolio{
@@ -162,6 +202,17 @@
 .my-portfolios .item img{
     width: 100%;
     height: 100%;
+}
+
+@media(max-width: 765px){
+    .my-portfolios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+    .my-portfolios .item{
+        width: 50vw;
+    }
 }
 
 /* BASE STYLES */
@@ -221,4 +272,23 @@
     border-radius: 50%;
     padding: 10px;
     border: 1px solid #F1E0DA;
+}
+
+@media(max-width: 1000px){
+    .contacts{
+        height: auto;
+        padding: 50px 0;
+    }
+    .contacts .contact-bar{
+        flex-direction: column;
+        align-self: center;
+        justify-content: center;
+    }
+    .contacts h3{
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+    .socials{
+        margin-top: 30px;
+    }
 }
