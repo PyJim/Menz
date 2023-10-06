@@ -54,6 +54,9 @@
 #mobile-nav{
     display: none;
 }
+.active{
+    border-bottom: 2px solid black;
+}
 
 @media(max-width: 575px){
     .navbar ul li{

@@ -12,3 +12,15 @@ window.addEventListener('scroll', function() {
         }
     });
 });
+
+var navLinks = document.querySelectorAll('.nav-link');
+
+navLinks.forEach(navLink =>{
+    navLink.addEventListener('click', () =>{
+        const actives = document.querySelectorAll('.active');
+        actives.forEach(active => {
+            active.classList.remove('active');
+        });
+        navLink.classList.add('active');
+    });
+});
