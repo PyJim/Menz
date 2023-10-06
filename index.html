@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-
+    
     <title>Menz Graphix</title>
 </head>
 <body>
     <div class="image-banner">
         <img src="./image bg.png" alt="">
     </div>
-    <div class="navbar">
+    <div class="navbar" id="desktop-nav">
         <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">PORTFOLIO</a></li>
-            <li><a href="">CONTACT</a></li>
+            <li><a href="" class="nav-link">HOME</a></li>
+            <li><a href="" class="nav-link">ABOUT</a></li>
+            <li><a href="" class="nav-link">SERVICES</a></li>
+            <li><a href="" class="nav-link">PORTFOLIO</a></li>
+            <li><a href="" class="nav-link">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="navbar" id="mobile-nav">
+        <ul>
+            <li><a href="" class="nav-link"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="" class="nav-link"><i class="fa-solid fa-user"></i></a></li>
+            <li><a href="" class="nav-link"><i class="fa-solid fa-book"></i></a></li>
+            <li><a href="" class="nav-link"><i class="fa-solid fa-briefcase"></i></a></li>
+            <li><a href="" class="nav-link"><i class="fa-solid fa-phone"></i></a></li>
         </ul>
     </div>
     <div class="about">
@@ -94,4 +103,5 @@
         <p>dev: JKE</p>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>

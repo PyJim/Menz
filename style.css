@@ -19,7 +19,9 @@
 }
 
 /* NAVBAR STYLES */
-
+#mobile-nav ul li{
+    opacity: .8;
+}
 .navbar{
     width: 100vw;
     height: 70px;
@@ -27,6 +29,7 @@
     align-items: center;
     justify-content: center;
     background-color: white;
+    z-index: 99;
 }
 .navbar ul{
     list-style: none;
@@ -42,9 +45,33 @@
     color: black;
 }
 
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#mobile-nav{
+    display: none;
+}
+
 @media(max-width: 575px){
     .navbar ul li{
         font-size: 13px;
+    }
+}
+
+@media(max-width: 480px){
+    #mobile-nav{
+        display: flex;
+    }
+    #desktop-nav{
+        display: none;
+    }
+}
+@media(max-width: 330px){
+    .avbar ul li a i{
+        font-size: 50px;
     }
 }
 /* ABOUT PAGE STYLES */
@@ -109,6 +136,17 @@
     }
     .image{
         padding: 50px 0;
+    }
+}
+@media(max-width: 500px){
+    .about{
+        padding: 30px 20px;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
     }
 }
 .about-text h3{
@@ -231,7 +269,23 @@
     color: #F1E0DA;
     padding: 10px 30px;
 }
-
+@media(max-width: 550px){
+    .base{
+        height: auto;
+        padding: 20px 30px;
+        
+    }
+    .base p{
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 350px){
+    .base{
+        flex-direction: column;
+    }
+}
 /* CONTACTS STYLES */
 .contacts{
     width: 100vw;
@@ -295,5 +349,14 @@
     }
     .socials{
         margin-top: 30px;
+    }
+}
+@media(max-width: 550px){
+    .contacts h3{
+        font-size: 20px;
+        
+    }
+    .contacts p{
+        font-size: 12px;
     }
 }
